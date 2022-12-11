@@ -32,7 +32,7 @@
         {
             foreach($this->currencies as $from => $currency) {
                 foreach($currency as $to) {
-                    $this->object = (object) array_merge( (array)$this->object, array( $from.'-'.$to => SELF::currencyAPI($to, $from)) );
+                    $this->object = (object) array_merge( (array)$this->object, array( $from.'-'.$to => SELF::currencyExchange($to, $from)) );
                 }
             }
         }
@@ -57,7 +57,7 @@
          * The code check if the first API is still working, if it's not, use a second one to provide the
          * currency exchange. Even the second API, in the free version, should have some limit.
         */
-        private function currencyAPI($to = 'CZK', $from = 'ERR') {
+        private function currencyExchange($to = 'CZK', $from = 'ERR') {
 
             if($from == 'ERR') { return 'Please provide a currency to convert from'; }
 
