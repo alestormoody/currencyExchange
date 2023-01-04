@@ -1,7 +1,7 @@
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "./convert.php",
+    "url": "./includes/Convert.php",
     "method": "GET"
     }
 

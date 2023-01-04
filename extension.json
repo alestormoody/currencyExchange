@@ -1,0 +1,10 @@
+{
+	"name": "Convert Exchange",
+	"author": "Alessio Tortolini",
+	"url": "",
+	"description": "This extension show a list of Currencies Exchange",
+	"version": "0.1",
+	"license-name": "GPL-2.0-or-later",
+	"type": "validextensionclass",
+	"manifest_version": 1
+}
